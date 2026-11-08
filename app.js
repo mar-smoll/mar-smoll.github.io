@@ -1,4 +1,10 @@
 'use strict';
+// Both rendering and motion start only after the editable JSON is validated.
+function initializePortfolio(){
+function imageDimensions(image,photo){
+  if(photo.width&&photo.height){image.width=photo.width;image.height=photo.height}
+  else{image.removeAttribute('width');image.removeAttribute('height')}
+}
 (() => {
   const projects=(window.PORTFOLIO||[]).filter(project=>project.photos?.length>0);
   const grid=document.querySelector('#project-grid');
@@ -7,11 +13,12 @@
     const reference=heroes[index];
     const project=reference&&projects.find(p=>p.id===reference.seriesId);
     const photo=project&&project.photos.find(p=>p.id===reference.photoId);
+    anchor.hidden=!photo;
     if(!photo)return;
     anchor.href='#series/'+encodeURIComponent(project.id);
     anchor.setAttribute('aria-label',`Открыть серию «${project.title}»`);
     const img=anchor.querySelector('img');
-    img.src=photo.src;img.alt=photo.alt;img.width=photo.width;img.height=photo.height;
+    img.src=photo.src;img.alt=photo.alt;imageDimensions(img,photo);
     anchor.querySelector('.photo-caption span').textContent=project.title;
     anchor.querySelector('.photo-caption span:last-child').textContent=project.category;
   });
@@ -25,7 +32,7 @@
     card.setAttribute('aria-label',`Открыть серию «${project.title}», ${project.photos.length} фотографий`);
     const frame=document.createElement('div');frame.className='project-photo';
     const thumbnail=document.createElement('img');
-    thumbnail.src=cover.thumb;thumbnail.width=cover.width;thumbnail.height=cover.height;
+    thumbnail.src=cover.thumb;imageDimensions(thumbnail,cover);
     thumbnail.loading='lazy';thumbnail.decoding='async';thumbnail.alt=cover.alt;
     const arrow=document.createElement('span');arrow.className='project-arrow';arrow.setAttribute('aria-hidden','true');arrow.textContent='↗';
     frame.append(thumbnail,arrow);
@@ -58,7 +65,7 @@
       anchor.href='#series/'+encodeURIComponent(project.id);
       anchor.setAttribute('aria-label',`Открыть серию «${project.title}»`);
       const img=document.createElement('img');img.src=photo.src;img.alt=photo.alt;
-      img.width=photo.width;img.height=photo.height;img.loading='lazy';img.decoding='async';
+      imageDimensions(img,photo);img.loading='lazy';img.decoding='async';
       const caption=document.createElement('span');caption.className='collage-caption';caption.textContent=project.title;
       const arrow=document.createElement('span');arrow.setAttribute('aria-hidden','true');arrow.textContent=' ↗';caption.append(arrow);
       anchor.append(img,caption);board.append(anchor);
@@ -146,7 +153,7 @@
       button.setAttribute('aria-label',`Открыть фотографию ${index+1} из ${project.photos.length}`);
       const thumbnail=document.createElement('img');
       thumbnail.src=photo.thumb;thumbnail.alt=photo.alt;
-      thumbnail.width=photo.width;thumbnail.height=photo.height;
+      imageDimensions(thumbnail,photo);
       thumbnail.loading=index<3?'eager':'lazy';thumbnail.decoding='async';
       button.append(thumbnail);
       button.addEventListener('click',()=>showPhoto(index));
@@ -304,4 +311,38 @@
     root.classList.remove('motion-ready');
     observer?.disconnect();
   }
+})();
+}
+
+(() => {
+  let loading=false;
+  let started=false;
+  const status=document.querySelector('#portfolio-loading');
+  const error=document.querySelector('#portfolio-load-error');
+  const retry=document.querySelector('#portfolio-retry');
+  async function load(){
+    if(loading)return;
+    if(started){location.reload();return}
+    loading=true;retry.disabled=true;error.hidden=true;status.hidden=false;
+    try{
+      const base=new URL('.',location.href);
+      const response=await fetch(new URL('portfolio.json',base),{cache:'no-store',signal:AbortSignal.timeout(15000)});
+      if(!response.ok)throw new Error('HTTP '+response.status);
+      const raw=await response.text();
+      if(raw.length>10000000)throw new Error('Слишком большой файл');
+      const {projects,heroes}=window.PortfolioContent.normalize(JSON.parse(raw),{basePath:base.pathname});
+      window.PORTFOLIO=projects;window.PORTFOLIO_HERO=heroes;
+      started=true;
+      initializePortfolio();
+      document.querySelector('#portfolio-empty').hidden=projects.some(project=>project.photos.length);
+      window.PORTFOLIO_READY=true;
+      window.dispatchEvent(new Event('portfolio:ready'));
+    }catch{
+      error.hidden=false;
+    }finally{
+      loading=false;retry.disabled=false;status.hidden=true;
+    }
+  }
+  retry.addEventListener('click',load);
+  load();
 })();

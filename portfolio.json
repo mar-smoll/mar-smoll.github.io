@@ -1,0 +1,780 @@
+{
+  "hero": [
+    "assets/liza-61.webp",
+    "assets/white-17.webp"
+  ],
+  "series": [
+    {
+      "id": "white",
+      "title": "София",
+      "category": "Портрет",
+      "note": "Мягкий свет, движение и белый цвет.",
+      "cover": "assets/white-17.webp",
+      "photos": [
+        {
+          "id": "white-17",
+          "src": "assets/white-17.webp",
+          "thumb": "assets/white-17-sm.webp",
+          "alt": "София. Фотография 1",
+          "width": 1575,
+          "height": 2100,
+          "originalSrc": "assets/white-17.webp"
+        },
+        {
+          "id": "white-0",
+          "src": "assets/white-0.webp",
+          "thumb": "assets/white-0-sm.webp",
+          "alt": "София. Фотография 2",
+          "width": 1280,
+          "height": 720,
+          "originalSrc": "assets/white-0.webp"
+        },
+        {
+          "id": "white-3",
+          "src": "assets/white-3.webp",
+          "thumb": "assets/white-3-sm.webp",
+          "alt": "София. Фотография 3",
+          "width": 960,
+          "height": 1280,
+          "originalSrc": "assets/white-3.webp"
+        },
+        {
+          "id": "white-10",
+          "src": "assets/white-10.webp",
+          "thumb": "assets/white-10-sm.webp",
+          "alt": "София. Фотография 4",
+          "width": 960,
+          "height": 1280,
+          "originalSrc": "assets/white-10.webp"
+        },
+        {
+          "id": "white-13",
+          "src": "assets/white-13.webp",
+          "thumb": "assets/white-13-sm.webp",
+          "alt": "София. Фотография 5",
+          "width": 960,
+          "height": 1280,
+          "originalSrc": "assets/white-13.webp"
+        },
+        {
+          "id": "white-20",
+          "src": "assets/white-20.webp",
+          "thumb": "assets/white-20-sm.webp",
+          "alt": "София. Фотография 6",
+          "width": 960,
+          "height": 1280,
+          "originalSrc": "assets/white-20.webp"
+        },
+        {
+          "id": "white-24",
+          "src": "assets/white-24.webp",
+          "thumb": "assets/white-24-sm.webp",
+          "alt": "София. Фотография 7",
+          "width": 960,
+          "height": 1280,
+          "originalSrc": "assets/white-24.webp"
+        },
+        {
+          "id": "white-27",
+          "src": "assets/white-27.webp",
+          "thumb": "assets/white-27-sm.webp",
+          "alt": "София. Фотография 8",
+          "width": 960,
+          "height": 1280,
+          "originalSrc": "assets/white-27.webp"
+        },
+        {
+          "id": "white-30",
+          "src": "assets/white-30.webp",
+          "thumb": "assets/white-30-sm.webp",
+          "alt": "София. Фотография 9",
+          "width": 960,
+          "height": 1280,
+          "originalSrc": "assets/white-30.webp"
+        },
+        {
+          "id": "white-34",
+          "src": "assets/white-34.webp",
+          "thumb": "assets/white-34-sm.webp",
+          "alt": "София. Фотография 10",
+          "width": 960,
+          "height": 1280,
+          "originalSrc": "assets/white-34.webp"
+        },
+        {
+          "id": "white-37",
+          "src": "assets/white-37.webp",
+          "thumb": "assets/white-37-sm.webp",
+          "alt": "София. Фотография 11",
+          "width": 1280,
+          "height": 853,
+          "originalSrc": "assets/white-37.webp"
+        }
+      ],
+      "uid": "71387ca1-5325-4cd3-ac08-7398c69184cc"
+    },
+    {
+      "id": "character",
+      "title": "Сергей",
+      "category": "Портрет",
+      "note": "Спокойный портрет в студии.",
+      "cover": "assets/character-15.webp",
+      "photos": [
+        {
+          "id": "character-15",
+          "src": "assets/character-15.webp",
+          "thumb": "assets/character-15-sm.webp",
+          "alt": "Сергей. Фотография 1",
+          "width": 1575,
+          "height": 2100,
+          "originalSrc": "assets/character-15.webp"
+        },
+        {
+          "id": "character-0",
+          "src": "assets/character-0.webp",
+          "thumb": "assets/character-0-sm.webp",
+          "alt": "Сергей. Фотография 2",
+          "width": 960,
+          "height": 1280,
+          "originalSrc": "assets/character-0.webp"
+        },
+        {
+          "id": "character-8",
+          "src": "assets/character-8.webp",
+          "thumb": "assets/character-8-sm.webp",
+          "alt": "Сергей. Фотография 3",
+          "width": 960,
+          "height": 1280,
+          "originalSrc": "assets/character-8.webp"
+        },
+        {
+          "id": "character-23",
+          "src": "assets/character-23.webp",
+          "thumb": "assets/character-23-sm.webp",
+          "alt": "Сергей. Фотография 4",
+          "width": 960,
+          "height": 1280,
+          "originalSrc": "assets/character-23.webp"
+        },
+        {
+          "id": "character-31",
+          "src": "assets/character-31.webp",
+          "thumb": "assets/character-31-sm.webp",
+          "alt": "Сергей. Фотография 5",
+          "width": 960,
+          "height": 1280,
+          "originalSrc": "assets/character-31.webp"
+        },
+        {
+          "id": "character-38",
+          "src": "assets/character-38.webp",
+          "thumb": "assets/character-38-sm.webp",
+          "alt": "Сергей. Фотография 6",
+          "width": 960,
+          "height": 1280,
+          "originalSrc": "assets/character-38.webp"
+        },
+        {
+          "id": "character-46",
+          "src": "assets/character-46.webp",
+          "thumb": "assets/character-46-sm.webp",
+          "alt": "Сергей. Фотография 7",
+          "width": 960,
+          "height": 1280,
+          "originalSrc": "assets/character-46.webp"
+        },
+        {
+          "id": "character-53",
+          "src": "assets/character-53.webp",
+          "thumb": "assets/character-53-sm.webp",
+          "alt": "Сергей. Фотография 8",
+          "width": 960,
+          "height": 1280,
+          "originalSrc": "assets/character-53.webp"
+        },
+        {
+          "id": "character-61",
+          "src": "assets/character-61.webp",
+          "thumb": "assets/character-61-sm.webp",
+          "alt": "Сергей. Фотография 9",
+          "width": 960,
+          "height": 1280,
+          "originalSrc": "assets/character-61.webp"
+        },
+        {
+          "id": "character-69",
+          "src": "assets/character-69.webp",
+          "thumb": "assets/character-69-sm.webp",
+          "alt": "Сергей. Фотография 10",
+          "width": 960,
+          "height": 1280,
+          "originalSrc": "assets/character-69.webp"
+        },
+        {
+          "id": "character-76",
+          "src": "assets/character-76.webp",
+          "thumb": "assets/character-76-sm.webp",
+          "alt": "Сергей. Фотография 11",
+          "width": 960,
+          "height": 1280,
+          "originalSrc": "assets/character-76.webp"
+        },
+        {
+          "id": "character-84",
+          "src": "assets/character-84.webp",
+          "thumb": "assets/character-84-sm.webp",
+          "alt": "Сергей. Фотография 12",
+          "width": 853,
+          "height": 1280,
+          "originalSrc": "assets/character-84.webp"
+        }
+      ],
+      "uid": "be799e14-2a6b-49c1-a3fd-ce2a077e5ef2"
+    },
+    {
+      "id": "liza",
+      "title": "Елизавета",
+      "category": "Портрет",
+      "note": "От студийной тени к свету у окна.",
+      "cover": "assets/liza-61.webp",
+      "photos": [
+        {
+          "id": "liza-61",
+          "src": "assets/liza-61.webp",
+          "thumb": "assets/liza-61-sm.webp",
+          "alt": "Елизавета. Фотография 1",
+          "width": 1575,
+          "height": 2100,
+          "originalSrc": "assets/liza-61.webp"
+        },
+        {
+          "id": "liza-0",
+          "src": "assets/liza-0.webp",
+          "thumb": "assets/liza-0-sm.webp",
+          "alt": "Елизавета. Фотография 2",
+          "width": 960,
+          "height": 1280,
+          "originalSrc": "assets/liza-0.webp"
+        },
+        {
+          "id": "liza-8",
+          "src": "assets/liza-8.webp",
+          "thumb": "assets/liza-8-sm.webp",
+          "alt": "Елизавета. Фотография 3",
+          "width": 960,
+          "height": 1280,
+          "originalSrc": "assets/liza-8.webp"
+        },
+        {
+          "id": "liza-15",
+          "src": "assets/liza-15.webp",
+          "thumb": "assets/liza-15-sm.webp",
+          "alt": "Елизавета. Фотография 4",
+          "width": 960,
+          "height": 1280,
+          "originalSrc": "assets/liza-15.webp"
+        },
+        {
+          "id": "liza-23",
+          "src": "assets/liza-23.webp",
+          "thumb": "assets/liza-23-sm.webp",
+          "alt": "Елизавета. Фотография 5",
+          "width": 853,
+          "height": 1280,
+          "originalSrc": "assets/liza-23.webp"
+        },
+        {
+          "id": "liza-31",
+          "src": "assets/liza-31.webp",
+          "thumb": "assets/liza-31-sm.webp",
+          "alt": "Елизавета. Фотография 6",
+          "width": 960,
+          "height": 1280,
+          "originalSrc": "assets/liza-31.webp"
+        },
+        {
+          "id": "liza-38",
+          "src": "assets/liza-38.webp",
+          "thumb": "assets/liza-38-sm.webp",
+          "alt": "Елизавета. Фотография 7",
+          "width": 853,
+          "height": 1280,
+          "originalSrc": "assets/liza-38.webp"
+        },
+        {
+          "id": "liza-46",
+          "src": "assets/liza-46.webp",
+          "thumb": "assets/liza-46-sm.webp",
+          "alt": "Елизавета. Фотография 8",
+          "width": 853,
+          "height": 1280,
+          "originalSrc": "assets/liza-46.webp"
+        },
+        {
+          "id": "liza-53",
+          "src": "assets/liza-53.webp",
+          "thumb": "assets/liza-53-sm.webp",
+          "alt": "Елизавета. Фотография 9",
+          "width": 960,
+          "height": 1280,
+          "originalSrc": "assets/liza-53.webp"
+        },
+        {
+          "id": "liza-76",
+          "src": "assets/liza-76.webp",
+          "thumb": "assets/liza-76-sm.webp",
+          "alt": "Елизавета. Фотография 10",
+          "width": 853,
+          "height": 1280,
+          "originalSrc": "assets/liza-76.webp"
+        },
+        {
+          "id": "liza-84",
+          "src": "assets/liza-84.webp",
+          "thumb": "assets/liza-84-sm.webp",
+          "alt": "Елизавета. Фотография 11",
+          "width": 853,
+          "height": 1280,
+          "originalSrc": "assets/liza-84.webp"
+        }
+      ],
+      "uid": "94436d4a-52b0-42e1-9779-6d25218ae198"
+    },
+    {
+      "id": "amber",
+      "title": "Сослан",
+      "category": "Портрет",
+      "note": "Глубокий синий, янтарный свет и тени.",
+      "cover": "assets/amber-52.webp",
+      "photos": [
+        {
+          "id": "amber-52",
+          "src": "assets/amber-52.webp",
+          "thumb": "assets/amber-52-sm.webp",
+          "alt": "Сослан. Фотография 1",
+          "width": 853,
+          "height": 1280,
+          "originalSrc": "assets/amber-52.webp"
+        },
+        {
+          "id": "amber-0",
+          "src": "assets/amber-0.webp",
+          "thumb": "assets/amber-0-sm.webp",
+          "alt": "Сослан. Фотография 2",
+          "width": 896,
+          "height": 1280,
+          "originalSrc": "assets/amber-0.webp"
+        },
+        {
+          "id": "amber-6",
+          "src": "assets/amber-6.webp",
+          "thumb": "assets/amber-6-sm.webp",
+          "alt": "Сослан. Фотография 3",
+          "width": 853,
+          "height": 1280,
+          "originalSrc": "assets/amber-6.webp"
+        },
+        {
+          "id": "amber-12",
+          "src": "assets/amber-12.webp",
+          "thumb": "assets/amber-12-sm.webp",
+          "alt": "Сослан. Фотография 4",
+          "width": 940,
+          "height": 1280,
+          "originalSrc": "assets/amber-12.webp"
+        },
+        {
+          "id": "amber-17",
+          "src": "assets/amber-17.webp",
+          "thumb": "assets/amber-17-sm.webp",
+          "alt": "Сослан. Фотография 5",
+          "width": 853,
+          "height": 1280,
+          "originalSrc": "assets/amber-17.webp"
+        },
+        {
+          "id": "amber-23",
+          "src": "assets/amber-23.webp",
+          "thumb": "assets/amber-23-sm.webp",
+          "alt": "Сослан. Фотография 6",
+          "width": 951,
+          "height": 1280,
+          "originalSrc": "assets/amber-23.webp"
+        },
+        {
+          "id": "amber-29",
+          "src": "assets/amber-29.webp",
+          "thumb": "assets/amber-29-sm.webp",
+          "alt": "Сослан. Фотография 7",
+          "width": 853,
+          "height": 1280,
+          "originalSrc": "assets/amber-29.webp"
+        },
+        {
+          "id": "amber-35",
+          "src": "assets/amber-35.webp",
+          "thumb": "assets/amber-35-sm.webp",
+          "alt": "Сослан. Фотография 8",
+          "width": 922,
+          "height": 1280,
+          "originalSrc": "assets/amber-35.webp"
+        },
+        {
+          "id": "amber-47",
+          "src": "assets/amber-47.webp",
+          "thumb": "assets/amber-47-sm.webp",
+          "alt": "Сослан. Фотография 9",
+          "width": 853,
+          "height": 1280,
+          "originalSrc": "assets/amber-47.webp"
+        },
+        {
+          "id": "amber-58",
+          "src": "assets/amber-58.webp",
+          "thumb": "assets/amber-58-sm.webp",
+          "alt": "Сослан. Фотография 10",
+          "width": 853,
+          "height": 1280,
+          "originalSrc": "assets/amber-58.webp"
+        },
+        {
+          "id": "amber-64",
+          "src": "assets/amber-64.webp",
+          "thumb": "assets/amber-64-sm.webp",
+          "alt": "Сослан. Фотография 11",
+          "width": 853,
+          "height": 1280,
+          "originalSrc": "assets/amber-64.webp"
+        }
+      ],
+      "uid": "4308e773-8beb-4ff6-af26-417989a8346b"
+    },
+    {
+      "id": "light",
+      "title": "Екатерина",
+      "category": "Портрет",
+      "note": "Разные герои. Один язык света.",
+      "cover": "assets/light-0.webp",
+      "photos": [
+        {
+          "id": "light-0",
+          "src": "assets/light-0.webp",
+          "thumb": "assets/light-0-sm.webp",
+          "alt": "Екатерина. Фотография 1",
+          "width": 960,
+          "height": 1280,
+          "originalSrc": "assets/light-0.webp"
+        },
+        {
+          "id": "light-23",
+          "src": "assets/light-23.webp",
+          "thumb": "assets/light-23-sm.webp",
+          "alt": "Екатерина. Фотография 2",
+          "width": 960,
+          "height": 1280,
+          "originalSrc": "assets/light-23.webp"
+        },
+        {
+          "id": "light-34",
+          "src": "assets/light-34.webp",
+          "thumb": "assets/light-34-sm.webp",
+          "alt": "Екатерина. Фотография 3",
+          "width": 960,
+          "height": 1280,
+          "originalSrc": "assets/light-34.webp"
+        },
+        {
+          "id": "light-45",
+          "src": "assets/light-45.webp",
+          "thumb": "assets/light-45-sm.webp",
+          "alt": "Екатерина. Фотография 4",
+          "width": 960,
+          "height": 1280,
+          "originalSrc": "assets/light-45.webp"
+        },
+        {
+          "id": "light-56",
+          "src": "assets/light-56.webp",
+          "thumb": "assets/light-56-sm.webp",
+          "alt": "Екатерина. Фотография 5",
+          "width": 960,
+          "height": 1280,
+          "originalSrc": "assets/light-56.webp"
+        },
+        {
+          "id": "light-68",
+          "src": "assets/light-68.webp",
+          "thumb": "assets/light-68-sm.webp",
+          "alt": "Екатерина. Фотография 6",
+          "width": 960,
+          "height": 1280,
+          "originalSrc": "assets/light-68.webp"
+        },
+        {
+          "id": "light-79",
+          "src": "assets/light-79.webp",
+          "thumb": "assets/light-79-sm.webp",
+          "alt": "Екатерина. Фотография 7",
+          "width": 960,
+          "height": 1280,
+          "originalSrc": "assets/light-79.webp"
+        },
+        {
+          "id": "light-90",
+          "src": "assets/light-90.webp",
+          "thumb": "assets/light-90-sm.webp",
+          "alt": "Екатерина. Фотография 8",
+          "width": 960,
+          "height": 1280,
+          "originalSrc": "assets/light-90.webp"
+        },
+        {
+          "id": "light-101",
+          "src": "assets/light-101.webp",
+          "thumb": "assets/light-101-sm.webp",
+          "alt": "Екатерина. Фотография 9",
+          "width": 1280,
+          "height": 853,
+          "originalSrc": "assets/light-101.webp"
+        },
+        {
+          "id": "light-113",
+          "src": "assets/light-113.webp",
+          "thumb": "assets/light-113-sm.webp",
+          "alt": "Екатерина. Фотография 10",
+          "width": 960,
+          "height": 1280,
+          "originalSrc": "assets/light-113.webp"
+        },
+        {
+          "id": "light-124",
+          "src": "assets/light-124.webp",
+          "thumb": "assets/light-124-sm.webp",
+          "alt": "Екатерина. Фотография 11",
+          "width": 960,
+          "height": 1280,
+          "originalSrc": "assets/light-124.webp"
+        }
+      ],
+      "uid": "97366a13-4c99-4fa7-865f-5414e5e6cf99"
+    },
+    {
+      "id": "people",
+      "title": "Выпуск медколледжа",
+      "category": "Выпуск",
+      "note": "Портреты медицинской команды.",
+      "cover": "assets/people-39.webp",
+      "photos": [
+        {
+          "id": "people-39",
+          "src": "assets/people-39.webp",
+          "thumb": "assets/people-39-sm.webp",
+          "alt": "Выпуск медколледжа. Фотография 1",
+          "width": 853,
+          "height": 1280,
+          "originalSrc": "assets/people-39.webp"
+        },
+        {
+          "id": "people-0",
+          "src": "assets/people-0.webp",
+          "thumb": "assets/people-0-sm.webp",
+          "alt": "Выпуск медколледжа. Фотография 2",
+          "width": 853,
+          "height": 1280,
+          "originalSrc": "assets/people-0.webp"
+        },
+        {
+          "id": "people-13",
+          "src": "assets/people-13.webp",
+          "thumb": "assets/people-13-sm.webp",
+          "alt": "Выпуск медколледжа. Фотография 3",
+          "width": 1024,
+          "height": 1280,
+          "originalSrc": "assets/people-13.webp"
+        },
+        {
+          "id": "people-26",
+          "src": "assets/people-26.webp",
+          "thumb": "assets/people-26-sm.webp",
+          "alt": "Выпуск медколледжа. Фотография 4",
+          "width": 1024,
+          "height": 1280,
+          "originalSrc": "assets/people-26.webp"
+        },
+        {
+          "id": "people-52",
+          "src": "assets/people-52.webp",
+          "thumb": "assets/people-52-sm.webp",
+          "alt": "Выпуск медколледжа. Фотография 5",
+          "width": 853,
+          "height": 1280,
+          "originalSrc": "assets/people-52.webp"
+        },
+        {
+          "id": "people-65",
+          "src": "assets/people-65.webp",
+          "thumb": "assets/people-65-sm.webp",
+          "alt": "Выпуск медколледжа. Фотография 6",
+          "width": 853,
+          "height": 1280,
+          "originalSrc": "assets/people-65.webp"
+        },
+        {
+          "id": "people-78",
+          "src": "assets/people-78.webp",
+          "thumb": "assets/people-78-sm.webp",
+          "alt": "Выпуск медколледжа. Фотография 7",
+          "width": 853,
+          "height": 1280,
+          "originalSrc": "assets/people-78.webp"
+        },
+        {
+          "id": "people-91",
+          "src": "assets/people-91.webp",
+          "thumb": "assets/people-91-sm.webp",
+          "alt": "Выпуск медколледжа. Фотография 8",
+          "width": 853,
+          "height": 1280,
+          "originalSrc": "assets/people-91.webp"
+        },
+        {
+          "id": "people-104",
+          "src": "assets/people-104.webp",
+          "thumb": "assets/people-104-sm.webp",
+          "alt": "Выпуск медколледжа. Фотография 9",
+          "width": 853,
+          "height": 1280,
+          "originalSrc": "assets/people-104.webp"
+        },
+        {
+          "id": "people-117",
+          "src": "assets/people-117.webp",
+          "thumb": "assets/people-117-sm.webp",
+          "alt": "Выпуск медколледжа. Фотография 10",
+          "width": 853,
+          "height": 1280,
+          "originalSrc": "assets/people-117.webp"
+        },
+        {
+          "id": "people-130",
+          "src": "assets/people-130.webp",
+          "thumb": "assets/people-130-sm.webp",
+          "alt": "Выпуск медколледжа. Фотография 11",
+          "width": 853,
+          "height": 1280,
+          "originalSrc": "assets/people-130.webp"
+        },
+        {
+          "id": "people-143",
+          "src": "assets/people-143.webp",
+          "thumb": "assets/people-143-sm.webp",
+          "alt": "Выпуск медколледжа. Фотография 12",
+          "width": 1280,
+          "height": 855,
+          "originalSrc": "assets/people-143.webp"
+        }
+      ],
+      "uid": "4abf4d51-bf4e-4001-a39f-42edfd8a085c"
+    },
+    {
+      "id": "outside",
+      "title": "За пределами студии",
+      "category": "Личное",
+      "note": "Прогулка, зелень и естественный свет.",
+      "cover": "assets/outside-31.webp",
+      "photos": [
+        {
+          "id": "outside-31",
+          "src": "assets/outside-31.webp",
+          "thumb": "assets/outside-31-sm.webp",
+          "alt": "За пределами студии. Фотография 1",
+          "width": 853,
+          "height": 1280,
+          "originalSrc": "assets/outside-31.webp"
+        },
+        {
+          "id": "outside-0",
+          "src": "assets/outside-0.webp",
+          "thumb": "assets/outside-0-sm.webp",
+          "alt": "За пределами студии. Фотография 2",
+          "width": 1280,
+          "height": 853,
+          "originalSrc": "assets/outside-0.webp"
+        },
+        {
+          "id": "outside-6",
+          "src": "assets/outside-6.webp",
+          "thumb": "assets/outside-6-sm.webp",
+          "alt": "За пределами студии. Фотография 3",
+          "width": 1280,
+          "height": 853,
+          "originalSrc": "assets/outside-6.webp"
+        },
+        {
+          "id": "outside-9",
+          "src": "assets/outside-9.webp",
+          "thumb": "assets/outside-9-sm.webp",
+          "alt": "За пределами студии. Фотография 4",
+          "width": 1280,
+          "height": 853,
+          "originalSrc": "assets/outside-9.webp"
+        },
+        {
+          "id": "outside-12",
+          "src": "assets/outside-12.webp",
+          "thumb": "assets/outside-12-sm.webp",
+          "alt": "За пределами студии. Фотография 5",
+          "width": 1024,
+          "height": 1280,
+          "originalSrc": "assets/outside-12.webp"
+        },
+        {
+          "id": "outside-15",
+          "src": "assets/outside-15.webp",
+          "thumb": "assets/outside-15-sm.webp",
+          "alt": "За пределами студии. Фотография 6",
+          "width": 853,
+          "height": 1280,
+          "originalSrc": "assets/outside-15.webp"
+        },
+        {
+          "id": "outside-19",
+          "src": "assets/outside-19.webp",
+          "thumb": "assets/outside-19-sm.webp",
+          "alt": "За пределами студии. Фотография 7",
+          "width": 1280,
+          "height": 720,
+          "originalSrc": "assets/outside-19.webp"
+        },
+        {
+          "id": "outside-22",
+          "src": "assets/outside-22.webp",
+          "thumb": "assets/outside-22-sm.webp",
+          "alt": "За пределами студии. Фотография 8",
+          "width": 1280,
+          "height": 853,
+          "originalSrc": "assets/outside-22.webp"
+        },
+        {
+          "id": "outside-28",
+          "src": "assets/outside-28.webp",
+          "thumb": "assets/outside-28-sm.webp",
+          "alt": "За пределами студии. Фотография 9",
+          "width": 1280,
+          "height": 853,
+          "originalSrc": "assets/outside-28.webp"
+        },
+        {
+          "id": "outside-34",
+          "src": "assets/outside-34.webp",
+          "thumb": "assets/outside-34-sm.webp",
+          "alt": "За пределами студии. Фотография 10",
+          "width": 853,
+          "height": 1280,
+          "originalSrc": "assets/outside-34.webp"
+        }
+      ],
+      "uid": "9032292c-ee08-4db6-8a90-de5cd26fb1d6"
+    }
+  ]
+}

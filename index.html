@@ -9,9 +9,9 @@
 <link rel="icon" href="favicon.svg?v=mar-smoll-2" type="image/svg+xml">
 <link rel="preload" href="assets/alumni-sans.ttf" as="font" type="font/ttf" crossorigin>
 <link rel="stylesheet" href="fonts.css">
-<link rel="stylesheet" href="style.css?v=mar-smoll-2">
-<script src="portfolio-data.js" defer></script>
-<script src="app.js?v=mar-smoll-2" defer></script>
+<link rel="stylesheet" href="style.css?v=cms-1">
+<script src="portfolio-content.js?v=cms-1" defer></script>
+<script src="app.js?v=cms-1" defer></script>
 </head>
 <body>
 <a class="skip" href="#portfolio">Перейти к фотографиям</a>
@@ -26,15 +26,18 @@
       <div class="intro-title"><h1 id="page-title">Портфолио</h1><p class="handwritten">/фотография/</p></div>
       <div class="intro-note"><a class="text-link" href="#portfolio">Все серии <span aria-hidden="true">↘</span></a></div>
     </div>
-    <a class="hero-picture hero-primary" href="#series/liza" aria-label="Открыть серию «Елизавета»"><div class="photo-frame"><img src="assets/liza-61.webp" width="1575" height="2100" alt="Елизавета. Фотография 1" fetchpriority="high"><span class="photo-open" aria-hidden="true">Открыть серию ↗</span></div><div class="photo-caption"><span>Елизавета</span><span>Портрет</span></div></a>
-    <a class="hero-picture hero-secondary" href="#series/white" aria-label="Открыть серию «София»"><div class="photo-frame"><img src="assets/white-17.webp" width="1575" height="2100" alt="София. Фотография 1" fetchpriority="high"><span class="photo-open" aria-hidden="true">Открыть серию ↗</span></div><div class="photo-caption"><span>София</span><span>Портрет</span></div></a>
+    <a class="hero-picture hero-primary" hidden href="#portfolio" aria-label="Открыть серию"><div class="photo-frame"><img alt="" fetchpriority="high"><span class="photo-open" aria-hidden="true">Открыть серию ↗</span></div><div class="photo-caption"><span></span><span></span></div></a>
+    <a class="hero-picture hero-secondary" hidden href="#portfolio" aria-label="Открыть серию"><div class="photo-frame"><img alt="" fetchpriority="high"><span class="photo-open" aria-hidden="true">Открыть серию ↗</span></div><div class="photo-caption"><span></span><span></span></div></a>
   </section>
   <section class="portfolio wrap" id="portfolio" aria-labelledby="portfolio-title">
     <div class="section-top"><div><p class="eyebrow">Избранные фотографии</p><h2 id="portfolio-title">Серии</h2></div></div>
     <div class="filters" role="group" aria-label="Фильтр серий"><button class="filter active" aria-pressed="true" data-filter="Все">Все серии <span>7</span></button><button class="filter" aria-pressed="false" data-filter="Портрет">Портреты <span>5</span></button><button class="filter" aria-pressed="false" data-filter="Выпуск">Выпуск <span>1</span></button><button class="filter" aria-pressed="false" data-filter="Личное">Личное <span>1</span></button></div>
     <p class="sr-only" id="filter-status" role="status" aria-live="polite"></p>
+    <p id="portfolio-loading" role="status">Загружаем фотографии…</p>
+    <div id="portfolio-load-error" role="alert" hidden><p>Не удалось загрузить фотографии. Проверь подключение и попробуй ещё раз.</p><button id="portfolio-retry" class="text-link" type="button">Повторить загрузку ↗</button></div>
+    <p id="portfolio-empty" hidden>Фотографии скоро появятся.</p>
     <div class="project-grid" id="project-grid"></div>
-    <noscript><p>Чтобы открыть все серии и просматривать фотографии, включи JavaScript. Избранные портреты доступны выше.</p></noscript>
+    <noscript><p>Чтобы открыть серии и просматривать фотографии, включи JavaScript.</p></noscript>
   </section>
   <section class="approach wrap" id="approach" aria-labelledby="approach-title">
     <p class="eyebrow">Обо мне</p>

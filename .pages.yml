@@ -1,0 +1,106 @@
+# Единственный редактируемый источник данных сайта: portfolio.json.
+# Удаление записи не удаляет файл. Не удаляйте используемые изображения из медиатеки.
+media:
+  - name: photos
+    label: Фотографии
+    input: assets
+    output: /assets
+    extensions: [jpg, jpeg, png, webp]
+    rename: random
+content:
+  - name: portfolio
+    label: Портфолио
+    type: file
+    path: portfolio.json
+    format: json
+    fields:
+      - name: hero
+        label: Главные фотографии
+        description: До двух фотографий. Выбирайте оригиналы, уже добавленные в серии, не файлы с окончанием -sm. Порядок можно менять перетаскиванием.
+        type: image
+        list:
+          max: 2
+          collapsible: false
+        options:
+          media: photos
+          extensions: [jpg, jpeg, png, webp]
+      - name: series
+        label: Серии
+        description: Перетаскивайте серии для изменения порядка. Серии без фотографий не показываются. Для новой серии идентификатор создаётся автоматически.
+        type: object
+        list:
+          max: 500
+          collapsible:
+            collapsed: true
+            summary: "{fields.title}"
+        fields:
+          - name: id
+            label: Прежний адрес серии
+            type: string
+            hidden: true
+          - name: uid
+            label: Автоматический идентификатор
+            type: uuid
+            hidden: true
+          - name: title
+            label: Название серии
+            type: string
+            required: true
+          - name: category
+            label: Категория
+            type: select
+            required: true
+            default: Портрет
+            options:
+              values: [Портрет, Выпуск, Личное]
+          - name: note
+            label: Описание серии
+            type: text
+          - name: cover
+            label: Обложка серии
+            description: Выберите оригинал из фотографий этой серии. Если поле пустое или фото отсутствует в серии, используется первая фотография.
+            type: image
+            options:
+              media: photos
+              extensions: [jpg, jpeg, png, webp]
+          - name: photos
+            label: Фотографии серии
+            description: Добавьте фотографию и при желании описание. Порядок меняется перетаскиванием. Размеры и миниатюры заполнять не нужно.
+            type: object
+            list:
+              max: 5000
+              collapsible:
+                collapsed: true
+                summary: "{fields.alt}"
+            fields:
+              - name: src
+                label: Фотография
+                type: image
+                required: true
+                options:
+                  media: photos
+                  extensions: [jpg, jpeg, png, webp]
+              - name: alt
+                label: Описание фотографии
+                description: Краткое описание для доступности. Если пусто, используется название серии и номер фотографии.
+                type: string
+              - name: id
+                label: Прежний идентификатор
+                type: string
+                hidden: true
+              - name: originalSrc
+                label: Исходный файл миниатюры
+                type: string
+                hidden: true
+              - name: thumb
+                label: Готовая миниатюра
+                type: string
+                hidden: true
+              - name: width
+                label: Исходная ширина
+                type: number
+                hidden: true
+              - name: height
+                label: Исходная высота
+                type: number
+                hidden: true
