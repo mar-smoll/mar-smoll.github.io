@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#faf8f1">
+<meta name="description" content="mar.smoll · Мария, фотограф с 5-летним опытом. Портреты, индивидуальные и творческие съёмки, Love Story. Современная фотография с лёгкой плёночной эстетикой.">
+<title>mar.smoll · Мария, фотограф</title>
+<link rel="icon" href="favicon.svg?v=mar-smoll-2" type="image/svg+xml">
+<link rel="preload" href="assets/alumni-sans.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="style.css?v=mar-smoll-2">
+<script src="portfolio-data.js" defer></script>
+<script src="app.js?v=mar-smoll-2" defer></script>
+</head>
+<body>
+<a class="skip" href="#portfolio">Перейти к фотографиям</a>
+<header class="header">
+  <a class="wordmark" href="#top" aria-label="mar.smoll, на главную">mar.smoll</a>
+  <nav aria-label="Основная навигация"><a href="#portfolio">Фотографии</a><a href="#approach">Обо мне</a><a class="nav-contact" href="https://t.me/aestRus" target="_blank" rel="noopener noreferrer" aria-label="Записаться на съёмку">Записаться <span aria-hidden="true">↗</span></a></nav>
+</header>
+<main id="top">
+  <section class="hero wrap" aria-labelledby="page-title">
+    <div class="intro">
+      <p class="intro-identity"><span class="intro-name">Мария</span> <span class="intro-specialty">Индивидуальные и творческие съёмки</span></p>
+      <div class="intro-title"><h1 id="page-title">Портфолио</h1><p class="handwritten">/фотография/</p></div>
+      <div class="intro-note"><a class="text-link" href="#portfolio">Все серии <span aria-hidden="true">↘</span></a></div>
+    </div>
+    <a class="hero-picture hero-primary" href="#series/liza" aria-label="Открыть серию «Елизавета»"><div class="photo-frame"><img src="assets/liza-61.webp" width="1575" height="2100" alt="Елизавета. Фотография 1" fetchpriority="high"><span class="photo-open" aria-hidden="true">Открыть серию ↗</span></div><div class="photo-caption"><span>Елизавета</span><span>Портрет</span></div></a>
+    <a class="hero-picture hero-secondary" href="#series/white" aria-label="Открыть серию «София»"><div class="photo-frame"><img src="assets/white-17.webp" width="1575" height="2100" alt="София. Фотография 1" fetchpriority="high"><span class="photo-open" aria-hidden="true">Открыть серию ↗</span></div><div class="photo-caption"><span>София</span><span>Портрет</span></div></a>
+  </section>
+  <section class="portfolio wrap" id="portfolio" aria-labelledby="portfolio-title">
+    <div class="section-top"><div><p class="eyebrow">Избранные фотографии</p><h2 id="portfolio-title">Серии</h2></div></div>
+    <div class="filters" role="group" aria-label="Фильтр серий"><button class="filter active" aria-pressed="true" data-filter="Все">Все серии <span>7</span></button><button class="filter" aria-pressed="false" data-filter="Портрет">Портреты <span>5</span></button><button class="filter" aria-pressed="false" data-filter="Выпуск">Выпуск <span>1</span></button><button class="filter" aria-pressed="false" data-filter="Личное">Личное <span>1</span></button></div>
+    <p class="sr-only" id="filter-status" role="status" aria-live="polite"></p>
+    <div class="project-grid" id="project-grid"></div>
+    <noscript><p>Чтобы открыть все серии и просматривать фотографии, включи JavaScript. Избранные портреты доступны выше.</p></noscript>
+  </section>
+  <section class="approach wrap" id="approach" aria-labelledby="approach-title">
+    <p class="eyebrow">Обо мне</p>
+    <div class="about-layout">
+      <h2 id="approach-title">В центре кадра <em>— человек.</em></h2>
+      <figure class="about-portrait"><img src="assets/maria-about.webp" width="1050" height="1050" loading="lazy" decoding="async" alt="Мария у моря, ветер в волосах и вечернее небо"></figure>
+      <div class="approach-copy"><p>Меня зовут Мария, я фотограф с 5-летним опытом. Люблю современную фотографию с легкой пленочной эстетикой и кадры с характером: стильные, атмосферные и продуманные до деталей.</p><p>Снимаю портреты, индивидуальные истории, Love Story, работаю в студии и на улице. А еще с интересом берусь за проекты, которые выходят за рамки привычного.</p></div>
+    </div>
+  </section>
+  <section class="collage wrap" id="collage" aria-labelledby="collage-title" hidden>
+    <h2 class="collage-title" id="collage-title">Ещё несколько кадров</h2>
+    <div class="collage-board" id="collage-board"></div>
+  </section>
+  <section class="contact wrap" id="contact" aria-labelledby="contact-title"><p class="eyebrow">На связи</p><h2 id="contact-title">Обсудим<br><em>съёмку?</em></h2><div class="contact-details"><a class="booking-link" href="https://t.me/aestRus" target="_blank" rel="noopener noreferrer" aria-label="Написать в Telegram @aestRus"><span>Написать в Telegram<small>@aestRus</small></span><span class="contact-line" aria-hidden="true">↗</span></a></div></section>
+</main>
+<footer class="footer wrap"><a class="wordmark" href="#top" aria-label="Вернуться в начало">mar.smoll</a><p>Фотограф Мария</p><a href="#top">Наверх ↑</a></footer>
+<dialog id="series-dialog" class="series-dialog" aria-labelledby="series-title">
+  <div class="series-bar"><button class="back-button" id="close-series" aria-label="Закрыть серию">← <span>Все серии</span></button><a class="wordmark" href="#top" id="series-home" aria-label="mar.smoll, на главную">mar.smoll</a><button class="next-series" id="next-series">Следующая серия <span aria-hidden="true">↗</span></button></div>
+  <div class="series-heading"><div><p class="eyebrow" id="series-category"></p><h2 id="series-title"></h2></div><div><p id="series-note"></p><p class="series-total" id="series-total"></p></div></div>
+  <div class="series-grid" id="series-grid"></div>
+  <div class="series-bottom"><span>Избранные кадры из серии</span><button class="text-link" id="bottom-next">Следующая серия ↗</button></div>
+</dialog>
+<dialog id="viewer" class="viewer" aria-labelledby="viewer-title">
+  <div class="viewer-bar"><p id="viewer-title"></p><button class="viewer-close" id="close-viewer" aria-label="Закрыть фотографию">Закрыть <span aria-hidden="true">×</span></button></div>
+  <div class="viewer-stage"><button class="viewer-prev viewer-nav" aria-label="Предыдущая фотография">←</button><div class="viewer-image-area"><img id="viewer-image" alt=""><p class="image-error" hidden>Не удалось открыть фотографию. Попробуй перейти к следующей.</p></div><button class="viewer-next viewer-nav" aria-label="Следующая фотография">→</button></div>
+  <div class="viewer-bottom"><span class="viewer-hint">← → для просмотра</span><p id="viewer-count" aria-live="polite"></p><span class="viewer-hint">Esc, чтобы закрыть</span></div>
+</dialog>
+</body>
+</html>
